@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint RMJSONPatch.podspec' to ensure this is a
+#  Be sure to run `pod spec lint LSJSONPatch.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "RMJSONPatch"
-  s.version      = "1.0.4"
+  s.name         = "LSJSONPatch"
+  s.version      = "1.1.0"
   s.summary      = "JSONPatch is a swift library for applying and generating RFC-6902 compliant JSON patches."
-  s.module_name  = "JSONPatch"
+  s.module_name  = "LSJSONPatch"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
                    methods to make it easy to work with json-patches.
                    DESC
 
-  s.homepage     = "https://github.com/raymccrae/swift-jsonpatch"
+  s.homepage     = "https://github.com/Lightstreamer/LSJSONPatch"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -70,11 +70,12 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.10"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
+  s.ios.deployment_target = "11.0"
+  s.osx.deployment_target = "10.12"
+  s.watchos.deployment_target = "3.0"
+  s.tvos.deployment_target = "10.0"
 
+  s.swift_versions = ['5']
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -82,7 +83,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/raymccrae/swift-jsonpatch.git", :tag => "v#{s.version}" }
+  #s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
