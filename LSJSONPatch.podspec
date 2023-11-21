@@ -83,8 +83,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :tag => "v#{s.version}" }
-  s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :branch => "master" }
+  s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :tag => "#{s.version}" }
+  # s.source       = { :git => "https://github.com/Lightstreamer/LSJSONPatch.git", :branch => "master" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
